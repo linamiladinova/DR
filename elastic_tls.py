@@ -379,7 +379,7 @@ try:
     allowed_deviation = baseline / 5 # 20% of baseline
     last_val = buckets[-1]["count"] 
     if (last_val > baseline + allowed_deviation or last_val < baseline - allowed_deviation):
-        print("Losha shema")
+        print("Над 20% отклонение за данните от последните 12 часа!")
 
 
     # for i in range (0, res['hits']['total']['value']-1):

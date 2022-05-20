@@ -954,7 +954,7 @@ last_val = buckets_events[-1]["count"]
 if (last_val > baseline_events + allowed_deviation or last_val < baseline_events - allowed_deviation):
     print("Над 20% отклонение за events от последните 12 часа!")
     
-allowed_deviation = baseline_events / 5 # 20% of baseline
+allowed_deviation = baseline_bytes / 5 # 20% of baseline
 last_val = buckets_bytes[-1]["bytes"] 
 if (last_val > baseline_bytes + allowed_deviation or last_val < baseline_bytes - allowed_deviation):
     print("Над 20% отклонение за байтовете от последните 12 часа!")
